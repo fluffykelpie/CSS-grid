@@ -1,8 +1,13 @@
 .container {
+    height: 100%;
     display: grid;
-    grid-template-columns: 100px auto;
-    grid-template-rows: 50px 50px 200px;
     grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+    "m h h h h h h h h h h h"
+    "m c c c c c c c c c c c "
+    "f f f f f f f f f f f f";
 }
 
 div {
@@ -10,18 +15,22 @@ div {
     padding: 1rem;
 }
 
-.impair {
-    background-color:rgb(112, 223, 223);
+.header {
+    background-color:rgb(112, 223, 223);  
+    grid-area: h;  
 }
 
-.pair {
+.menu {
     background-color: rgb(177, 81, 81);
+    grid-area: m;
 }
 
-.other {
+.content {
     background-color: sandybrown;
+    grid-area: c;
 }
 
-.mis {
+.footer {
     background-color: rgb(32, 172, 172);
+    grid-area: f;
 }

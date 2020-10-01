@@ -1,14 +1,29 @@
 .container {
     display: grid;
-    grid-template-columns: 100px auto;
-    grid-template-rows: 50px 50px 200px;
-    grid-gap: 3px;
+    height: 100%;
+    grid-gap: 5px;
+    border: 1px solid black;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 100px);
+    justify-content: space-around;
+    align-content: center;
 }
 
-div {
-    text-align: center;
-    padding: 1rem;
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #Fff;
 }
+
+html, body {
+    box-sizing: border-box;
+    background-color: #dddad0;
+    height: 100%;
+    padding: 10px;
+    margin: 0px;
+  }
 
 .impair {
     background-color:rgb(112, 223, 223);

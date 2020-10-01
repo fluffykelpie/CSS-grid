@@ -10,18 +10,18 @@ div {
     padding: 1rem;
 }
 
-.impair {
+.header {
     background-color:rgb(112, 223, 223);
 }
 
-.pair {
+.menu {
     background-color: rgb(177, 81, 81);
 }
 
-.other {
+.content {
     background-color: sandybrown;
 }
 
-.mis {
+.footer {
     background-color: rgb(32, 172, 172);
 }

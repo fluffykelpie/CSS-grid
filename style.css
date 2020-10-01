@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-columns: 100px auto ;
+    grid-template-rows: 50px 50px 200px;
+    grid-gap: 3px;
+}
+
+div {
+    text-align: center;
+    padding: 1rem;
+}
+
+.impair {
+    background-color:rgb(112, 223, 223);
+}
+
+.pair {
+    background-color: rgb(177, 81, 81);
+}
+
+.other {
+    background-color: sandybrown;
+}
+
+.mis {
+    background-color: rgb(32, 172, 172);
+}

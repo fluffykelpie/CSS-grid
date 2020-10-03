@@ -1,40 +1,50 @@
-.container {
-    height: 100%;
-    display: grid;
-<<<<<<< HEAD
-    grid-template: repeat(2, 50px) / repeat(3, 1fr);
-=======
->>>>>>> section3
-    grid-gap: 3px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 40px auto 40px;
-    grid-template-areas: 
-    "m h h h h h h h h h h h"
-    "m c c c c c c c c c c c "
-    "f f f f f f f f f f f f";
+
+
+
+/* General styling */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
 }
 
-div {
-    text-align: center;
-    padding: 1rem;
+body {
+    margin: 0 10px;
 }
 
-.header {
-    background-color:rgb(112, 223, 223);  
-    grid-area: h;  
+img {
+    width: 100%;
 }
 
-.menu {
-    background-color: rgb(177, 81, 81);
-    grid-area: m;
+.line-numbers a {
+    text-decoration: none;
+    color: #000;
+    padding-right: 1em;
 }
 
-.content {
-    background-color: sandybrown;
-    grid-area: c;
+code {
+    background: #eee;
+    padding: 2px 5px;
 }
 
-.footer {
-    background-color: rgb(32, 172, 172);
-    grid-area: f;
+pre {
+    background: #eee;
+    padding: 10px 15px;
+    overflow: auto;
+}
+
+pre > code {
+    padding: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+figure figcaption {
+    color: #666;
+    font-style: italic;
+    font-size: 0.8em;
+}grid-area: f;
 }

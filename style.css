@@ -1,4 +1,5 @@
 .container {
+    height: 100%;
     display: grid;
 <<<<<<< HEAD
     grid-template: repeat(2, 50px) / repeat(3, 1fr);
@@ -6,7 +7,11 @@
 >>>>>>> section3
     grid-gap: 3px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 40px 200px 40px;
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+    "m h h h h h h h h h h h"
+    "m c c c c c c c c c c c "
+    "f f f f f f f f f f f f";
 }
 
 div {
@@ -15,21 +20,21 @@ div {
 }
 
 .header {
-    background-color:rgb(112, 223, 223);
-    grid-column: 2/-1;
+    background-color:rgb(112, 223, 223);  
+    grid-area: h;  
 }
 
 .menu {
     background-color: rgb(177, 81, 81);
-    grid-row: 1 / 3;
+    grid-area: m;
 }
 
 .content {
     background-color: sandybrown;
-    grid-column: 2 / -1;
+    grid-area: c;
 }
 
 .footer {
     background-color: rgb(32, 172, 172);
-    grid-column: 1/ -1;
+    grid-area: f;
 }

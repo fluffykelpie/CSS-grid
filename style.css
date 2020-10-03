@@ -46,5 +46,28 @@ figure figcaption {
     color: #666;
     font-style: italic;
     font-size: 0.8em;
-}grid-area: f;
+}
+
+
+article {
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+    grid-column-gap: 10px;
+}
+
+article > * {
+   grid-column: 2;
+   min-width: 0;
+}
+
+article > figure {
+    grid-column: 1 / -1;
+    margin: 20px 0;
+}
+
+article > .aside {
+    grid-column: 3;
+    color: #666;
+    font-size: 0.8em;
+
 }

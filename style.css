@@ -1,40 +1,50 @@
-.container {
-    height: 100%;
-    display: grid;
-<<<<<<< HEAD
-    grid-template: repeat(2, 50px) / repeat(3, 1fr);
-=======
->>>>>>> section3
-    grid-gap: 3px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 40px auto 40px;
-    grid-template-areas: 
-    "m h h h h h h h h h h h"
-    "m c c c c c c c c c c c "
-    "f f f f f f f f f f f f";
-}
-
-div {
+html, body {
+    background-color: #ffeead;
+    margin: 10px;
+    font-size: 20px;
+  }
+  
+  p {
+    color: #96ceb4;
     text-align: center;
-    padding: 1rem;
-}
-
-.header {
-    background-color:rgb(112, 223, 223);  
-    grid-area: h;  
-}
-
-.menu {
-    background-color: rgb(177, 81, 81);
-    grid-area: m;
-}
-
-.content {
-    background-color: sandybrown;
-    grid-area: c;
-}
-
-.footer {
-    background-color: rgb(32, 172, 172);
-    grid-area: f;
-}
+  }
+  
+  .flexbox-header > div {
+    display: flex;
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+  
+  .flexbox-header {
+    background-color: #96ceb4;
+    color: #ffeead;
+  }
+  
+  
+  .header {
+      background-color: #96ceb4;	
+  }
+  
+  .header :nth-child(2) {
+      padding: 0 40px;
+  }
+  
+  .menu {
+      background-color: #ff6f69;
+  }
+  
+  .content {
+      background-color: #ffcc5c;
+  }
+  
+  .footer {
+      background-color: #88d8b0;
+  }
+  
+  .grid-page > div {
+      color: #ffeead;
+      display: flex;
+      align-items: center;
+      padding: 0px 20px;
+  }
+  
